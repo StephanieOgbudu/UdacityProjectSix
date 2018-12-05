@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom';
-import BookShelf from "./BookShelf";
+import {Link} from 'react-router-dom'
+import BookShelf from "./BookShelf"
 
 class BookCase extends Component {
     state = {}
 
     componentDidMount = () => {
-        // Update the list of all books
         this
             .props
             .onRefreshBooks();
@@ -61,7 +60,7 @@ class BookCase extends Component {
                         </div>
                     </div>
                     <button className="open-search">
-                        <Link to='/search'><button></button></Link>
+                        <Link to='/search'>Add Book</Link>
                     </button>
                 </div>
             </div>
